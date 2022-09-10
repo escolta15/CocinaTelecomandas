@@ -1,0 +1,7 @@
+{
+  "name": "CocinaTelecomandas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

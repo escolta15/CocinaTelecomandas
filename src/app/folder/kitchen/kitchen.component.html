@@ -1,0 +1,44 @@
+<div class="padding">
+  <div class="center">
+    <div class="pending">
+      <h1>Pending</h1>
+      <ion-grid class="ion-margin">
+        <ion-row>
+          <ion-col>Units</ion-col>
+          <ion-col>Name</ion-col>
+          <ion-col>Table</ion-col>
+          <ion-col>Check-in</ion-col>
+          <ion-col>Done</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let dish of pendingDishes">
+          <ion-col>{{ dish.units }}</ion-col>
+          <ion-col>{{ dish.name }}</ion-col>
+          <ion-col>{{ dish.tableId }}</ion-col>
+          <ion-col>{{ dish.checkIn }}</ion-col>
+          <ion-col>
+            <ion-button (click)="onReadyDish(dish)">Ready</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="ready">
+      <h1>Ready</h1>
+      <ion-grid class="ion-margin">
+        <ion-row>
+          <ion-col>Units</ion-col>
+          <ion-col>Name</ion-col>
+          <ion-col>Table</ion-col>
+          <ion-col>Check-in</ion-col>
+          <ion-col>Check-out</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let dish of readyDishes">
+          <ion-col>{{ dish.units }}</ion-col>
+          <ion-col>{{ dish.name }}</ion-col>
+          <ion-col>{{ dish.tableId }}</ion-col>
+          <ion-col>{{ dish.checkIn }}</ion-col>
+          <ion-col>{{ dish.checkOut }}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</div>
