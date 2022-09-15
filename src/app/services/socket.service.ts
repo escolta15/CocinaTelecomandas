@@ -1,8 +1,7 @@
 // src\app\services\websocket.service.ts
 import { Injectable } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
+import { Observable, Observer, Subject } from 'rxjs';
 import { AnonymousSubject } from 'rxjs/internal/Subject';
-import { Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { SentSocket } from '../models/sent-socket.model';
 

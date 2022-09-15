@@ -13,5 +13,4 @@ export class AppComponent {
     },
     { title: 'about', url: '/about', icon: 'information' },
   ];
-  constructor() {}
 }

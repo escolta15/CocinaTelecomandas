@@ -68,8 +68,7 @@ export class KitchenComponent implements OnInit {
 
   private updateData(command: any): void {
     const currentdate = new Date();
-    for (let i = 0; i < command.platos.length; i++) {
-      const dish = command.platos[i];
+    for (const dish of command.platos) {
       const comandaEnviada = {
         units: dish.unidades,
         name: dish.nombre,
